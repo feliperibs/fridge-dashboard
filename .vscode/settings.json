@@ -1,0 +1,17 @@
+{
+    "typescript.tsdk": ".\\node_modules\\typescript\\lib",
+    "typescript.validate.enable": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "html.format.endWithNewline": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "tslint.exclude": "dist",
+    "tslint.autoFixOnSave": true,
+    "tslint.jsEnable": true,
+    "tslint.rulesDirectory": [
+        ".\\node_modules\\tslint-microsoft-contrib",
+        ".\\node_modules\\codelyzer"
+    ],
+    "eslint.enable": false
+}

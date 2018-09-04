@@ -1,0 +1,14 @@
+node_modules*/
+dist/
+coverage/
+*.log.*
+*.log
+TESTS-*.xml
+mfe-*/
+.idea/
+.ng_pkg_build/
+*.tgz
+documentation/
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock

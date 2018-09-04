@@ -1,0 +1,123 @@
+{
+    "rulesDirectory": [
+        "node_modules/tslint-microsoft-contrib",
+        "node_modules/codelyzer",
+        "node_modules/angl-archtslint/rules"
+    ],
+    "extends": [
+        "tslint-microsoft-contrib",
+        "angl-archtslint/tslint-config",
+        "angular-tslint-rules"
+    ],
+    "rules": {
+        "member-access": true,
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "always",
+                "singleline": "never"
+            }
+        ],
+        "no-null-keyword": false,
+        "prefer-function-over-method": false,
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "arrow-parens": true,
+        "linebreak-style": [
+            true,
+            "CRLF"
+        ],
+        "curly": [
+            true,
+            "ignore-same-line"
+        ],
+        "directive-selector": [
+            true,
+            "attribute",
+            "afe",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "afe",
+            "kebab-case"
+        ],
+        "missing-jsdoc": false,
+        "no-relative-imports": false,
+        "no-parameter-properties": false,
+        "prefer-array-literal": false,
+        "array-type": [
+            true,
+            "generic"
+        ],
+        "interface-name": [
+            true,
+            "never-prefix"
+        ],
+        "no-angle-bracket-type-assertion": true,
+        "prefer-type-cast": false,
+        "no-import-side-effect": [
+            true,
+            {
+                "ignore-module": "(rxjs.*|.*.css|zone.js.*)$"
+            }
+        ],
+        "deprecation": true,
+        "no-submodule-imports": [
+            true,
+            "@angular/platform-browser",
+            "uuid",
+            "core-js",
+            "zone.js",
+            "@angular/platform-browser-dynamic",
+            "@angular/core/testing",
+            "rxjs",
+            "lodash",
+            "@angular/common/http",
+            "angl-spawebbgrl"
+        ],
+        "max-line-length": [
+            true,
+            {
+                "limit": 140,
+                "ignore-pattern": "^import |^export {(.*?)}|( )*(const|let|private)*( )*(\\w)+(:| =) ('|`)(((?!(' \\+ '|\\${)).)*|)('|`)(,|;)|( )*\/\/"
+            }
+        ],
+        "no-this-assignment": [
+            true,
+            {
+                "allow-destructuring": true
+            }
+        ],
+        "snt-arch-components": false,
+        "no-inferrable-types": false,
+        "cyclomatic-complexity": [
+            true,
+            10
+        ],
+        "no-implicit-dependencies": true,
+        "no-unnecessary-local-variable": false,
+        "export-name": false,
+        "newline-before-return": false,
+        "no-unused-variable": false,
+        "no-unsafe-any": false,
+        "no-require-imports": false,
+        "no-var-requires": false,
+        "use-view-encapsulation": false,
+        "function-name": [
+            true,
+            {
+                "method-regex": "^[a-z][\\w\\d]+$",
+                "private-method-regex": "^[a-z][\\w\\d]+$",
+                "protected-method-regex": "^[a-z][\\w\\d]+$",
+                "static-method-regex": "^([A-Z_\\d]+|forRoot|forChild)$",
+                "function-regex": "^[a-z][\\w\\d]+$"
+            }
+        ],
+        "mocha-no-side-effect-code": false
+    }
+}
